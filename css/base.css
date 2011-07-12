@@ -1,0 +1,24 @@
+div#wrapper {
+  margin: 0 auto;
+  width: 500px;
+  position: relative;
+}
+div.box {
+  height: 200px;
+  width: 400px;
+  border: 2px solid #ccc;
+  border-top: none;
+}
+div.box:first-child {
+  border-top: 2px solid #ccc;
+}
+div.box.selected {
+  border-left-color: #4D90F0;
+}
+div#animation {
+  border: 2px solid #4D90F0;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  position: absolute;
+}
