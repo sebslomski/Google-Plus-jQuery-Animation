@@ -1,4 +1,8 @@
 $ ->
+    $('div.box:first').addClass('selected')
+
+    $('div#wrapper').gplusBoxHighlight()
+
     $('div.box').click (e) ->
         $this = $(@)
         selected = $this.parent().find('.selected')

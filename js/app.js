@@ -1,5 +1,7 @@
 (function() {
   $(function() {
+    $('div.box:first').addClass('selected');
+    $('div#wrapper').gplusBoxHighlight();
     return $('div.box').click(function(e) {
       var $this, position, selected;
       $this = $(this);
