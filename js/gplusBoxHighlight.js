@@ -36,10 +36,9 @@
         }, {
           duration: plugin.settings.duration * 1000,
           complete: function() {
-            selected.removeClass(plugin.settings.selectedClass);
+            $element.find('.' + plugin.settings.boxClass).removeClass(plugin.settings.selectedClass);
             $this.addClass(plugin.settings.selectedClass);
-            $element.find('#' + plugin.settings.animationId).remove();
-            return $element.find('.' + plugin.settings.boxClass).removeClass(plugin.settings.selectedClass);
+            return $element.find('#' + plugin.settings.animationId).remove();
           }
         });
       });

@@ -41,14 +41,13 @@ $.gplusBoxHighlight = (element, options) ->
                     top: $this.position().top,
                     height: $this.height()
                 }, {
-                    duration: plugin.settings.duration*1000
+                    duration: plugin.settings.duration * 1000
                     complete: ->
-                        selected.removeClass(plugin.settings.selectedClass)
+                        $element.find('.' + plugin.settings.boxClass).removeClass(plugin.settings.selectedClass)
                         $this.addClass(plugin.settings.selectedClass)
                         $element.find('#' + plugin.settings.animationId).remove()
-                        $element.find('.' + plugin.settings.boxClass).removeClass(plugin.settings.selectedClass)
                 }
-                )
+            )
 
 
     plugin.init()
